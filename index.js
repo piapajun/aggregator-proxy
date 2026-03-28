@@ -22,8 +22,17 @@ export default {
 
     const base = platform === 'p1' ? P1 : P3
     const token = platform === 'p1' ? T1 : T3
+    const referer = platform === 'p1' ? 'http://1.14.58.242:8090/order' : 'http://103.217.203.210:9988/'
+    const origin = platform === 'p1' ? 'http://1.14.58.242:8090' : 'http://103.217.203.210:9988'
+
     const response = await fetch(base + apiPath, {
-      headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' }
+      headers: {
+        'Authorization': 'Bearer ' + token,
+        'Content-Type': 'application/json',
+        'Referer': referer,
+        'Origin': origin,
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36'
+      }
     })
     const text = await response.text()
     let data
