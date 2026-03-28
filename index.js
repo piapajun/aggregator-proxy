@@ -18,7 +18,7 @@ export default {
     const P1 = 'http://1.14.58.242:8090'
     const P3 = 'http://103.217.203.210:9900'
     const T1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQ4MDczNDQsImlhdCI6MTc3NDcyMDk0NSwidV9kaXNjb3VudCI6MSwidXNlcl9pZCI6MTY4fQ.u9qIhqHBybtdJ254tBgZ4bw0OdrbH5Fb4JHvc4zTHNc'
-    const T3 = 'F9VCrgqK0xtf3ON68guMREfOiKjUwsSR803clDLV'
+    const T3 = 'wPqc6BLcZiVDDrkmDKqSvfOhofjHr9j6loVbE92Q'
 
     const base = platform === 'p1' ? P1 : P3
     const token = platform === 'p1' ? T1 : T3
